@@ -36,7 +36,7 @@ class FacebookController extends Controller
             if(!Auth::check()) {
                 
             $user = Socialite::driver('facebook')->user();
-        
+            dd($user);
             $userModel = new User;
             
             $checkUser = User::where('facebook_id',$user->getId())->first();
