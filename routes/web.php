@@ -66,3 +66,14 @@ Route::any('iSHPiiflaPhbvbmcmAU1LL6XZsO1oqLG','AdminController@enableVoting');
 Route::any('PUNdDrZ/Y7ACw9+6fjot/5bpZFfOncPy','AdminController@disableVoting');
 Route::any('7CpI2g0zi06mx1p2ogf/odh5BQ/FZKFs','AdminController@showVotes');
 
+Route::get('food', function(){
+	return view('food');
+});
+
+Route::get('unimap', function(){
+	return view('map');
+});
+
+Route::get('FWagenda', function(){
+	return view('agenda');
+});

@@ -15,7 +15,7 @@
                 <div class="col-lg-12 col-md-12">
                     <div class="card h-100">
                         <div class="single-post post-style-2">
-                            <a href="{{url('/KingsQueens')}}">
+
                             <div class="blog-image"><img src="images/kingqueen.jpg" alt="Blog Image"></div>
 
                             <div class="blog-info">
@@ -29,10 +29,10 @@
                                 <br><br><br>
 
                                 <ul class="post-footer">
-                                    <li><i class="ion-eye"></i><b>View</b></li>
+                                    <li><a href="{{url('/KingsQueens')}}"><i class="ion-eye"></i><b>View</b></a></li>
                                     
                                 </ul>
-                            </a>
+
                             </div><!-- blog-right -->
 
                         </div><!-- single-post extra-blog -->
@@ -58,7 +58,7 @@
                                 <br><br><br>
 
                                 <ul class="post-footer">
-                                    <li><a href="food courts.html"><i class="ion-eye"></i><b>View</b></a></li>
+                                    <li><a href="{{url('food')}}"><i class="ion-eye"></i><b>View</b></a></li>
                                     
                                 </ul>
 
@@ -85,7 +85,7 @@
                                 <br><br><br>
 
                                 <ul class="post-footer">
-                                    <li><a href="map.html"><i class="ion-eye"></i><b>View</b></a></li>
+                                    <li><a href="{{url('unimap')}}"><i class="ion-eye"></i><b>View</b></a></li>
                                     
                                 </ul>
 
@@ -114,7 +114,7 @@
                                 <br><br><br>
 
                                 <ul class="post-footer">
-                                    <li><a href="agenda.html"><i class="ion-eye"></i><b>View</b></a></li>
+                                    <li><a href="{{url('FWagenda')}}"><i class="ion-eye"></i><b>View</b></a></li>
                                     
                                 </ul>
 

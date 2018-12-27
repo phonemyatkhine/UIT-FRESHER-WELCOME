@@ -49,7 +49,7 @@
 								<form action="{{ URL::to('voteKing') }}" method="post">
 										<input type="hidden" name="voted_id" value="{{$king->id}}">	
 										<input type="hidden" value="{{ csrf_token() }}" name="_token"> 
-										<button class="btn red" type="submit" onclick="return vote()"><i class="ion-heart" style="padding-right: 15px;"></i><span>Vote</span></button>
+										<button class="btn red" type="submit" onclick="return vote('{{$king->name}}')"><i class="ion-heart" style="padding-right: 15px;"></i><span>Vote</span></button>
 								</form>									
 
 							</div><!-- blog-info -->
