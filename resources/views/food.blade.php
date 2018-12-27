@@ -174,7 +174,7 @@
 										<h2 class="title"><b>Choco lover</b></h2>
 										<br>
 										<h5><i class="fas fa-user-circle" style="padding-right:10px;"></i>
-											<b>Hsu ThiRi Soe San</b></a></h5>
+											<b>Win Pa Pa Aung</b></a></h5>
 											<br>
 										
 											<h5><i class="fas fa-coins"style="padding-right:10px;"></i>
