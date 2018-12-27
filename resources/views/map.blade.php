@@ -47,7 +47,6 @@
 				
 			</div><!-- row -->
 
-			<a class="load-more-btn" href="#"><b> Vote for kings & queens </b></a>
 
 		</div><!-- container -->
 	</section><!-- section -->
