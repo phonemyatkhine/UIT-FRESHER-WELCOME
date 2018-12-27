@@ -16,10 +16,21 @@
 			<div class="row">
 
 	@if(!empty($king)) 
-	
 
-		@foreach($king as $king) 
-
+	<?php 
+		if($king[0]->flag==1){
+				$flag = 'enable';
+			} elseif ($king[0]->flag==0) {
+				$flag = 'disable';
+			}
+			elseif ($king[0]->flag==2) {
+				$flag = 'show';
+			}
+	?>
+		
+		@if($flag=='enable')
+			@foreach($king as $king) 
+			
 				<div class="col-lg-4 col-md-6">
 					<div class="card h-100">
 						<div class="single-post post-style-1">
@@ -38,7 +49,7 @@
 								<form action="{{ URL::to('voteKing') }}" method="post">
 										<input type="hidden" name="voted_id" value="{{$king->id}}">	
 										<input type="hidden" value="{{ csrf_token() }}" name="_token"> 
-										<button class="btn red" type="submit"><i class="ion-heart" style="padding-right: 15px;"></i><span>Vote</span></button>
+										<button class="btn red" type="submit" onclick="return vote()"><i class="ion-heart" style="padding-right: 15px;"></i><span>Vote</span></button>
 								</form>									
 
 							</div><!-- blog-info -->
@@ -46,7 +57,41 @@
 					</div><!-- card -->
 				</div><!-- col-lg-4 col-md-6 -->
 			@endforeach
-		@elseif (!empty($queen))
+		@elseif($flag=='disable')
+			<h3>Votings are disabled.</h3>
+		@elseif($flag=='show')
+			<table class="table">
+		    <thead>
+		      <tr>
+		        <th>No.</th>
+		        <th>Name</th>
+		        <th>Votes</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+			@foreach($king as $king)
+		      <tr>
+		        <td>{{$king->id}}</td>
+		        <td>{{$king->name}}</td>
+		        <td>{{$king->votes}}</td>
+		      </tr>
+			@endforeach
+		    </tbody>
+		  </table>
+		@endif
+
+	@elseif (!empty($queen))
+		<?php 
+			if($queen[0]->flag==1){
+					$flag = 'enable';
+				} elseif ($queen[0]->flag==0) {
+					$flag = 'disable';
+				}
+				elseif ($queen[0]->flag==2) {
+					$flag = 'show';
+				}
+		?>
+		@if($flag=='enable')
 			@foreach($queen as $queen)
 				<div class="col-lg-4 col-md-6">
 					<div class="card h-100">
@@ -66,15 +111,35 @@
 								<form action="{{ URL::to('voteQueen') }}" method="post">
 										<input type="hidden" name="voted_id" value="{{$queen->id}}">	
 										<input type="hidden" value="{{ csrf_token() }}" name="_token"> 
-										<button class="btn red" type="submit"><i class="ion-heart" style="padding-right: 15px;"></i><span>Vote</span></button>
+										<button class="btn red" type="submit" onclick="return vote('{{$queen->name}}')"><i class="ion-heart" style="padding-right: 15px;"></i><span>Vote</span></button>
 								</form>									
-								
-
 							</div><!-- blog-info -->
 						</div><!-- single-post -->
 					</div><!-- card -->
 				</div><!-- col-lg-4 col-md-6 -->
-		@endforeach
+			@endforeach
+		@elseif($flag=='disable')
+			<h3>Votings are disabled.</h3>
+		@elseif($flag=='show')
+			<table class="table">
+		    <thead>
+		      <tr>
+		        <th>No.</th>
+		        <th>Name</th>
+		        <th>Votes</th>
+		      </tr>
+		    </thead>
+		    <tbody>
+			@foreach($queen as $queen)
+		      <tr>
+		        <td>{{$queen->id}}</td>
+		        <td>{{$queen->name}}</td>
+		        <td>{{$queen->votes}}</td>
+		      </tr>
+			@endforeach
+		    </tbody>
+		  </table>
+		@endif
 	@endif
 			</div><!-- row -->
 

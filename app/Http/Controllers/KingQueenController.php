@@ -70,7 +70,6 @@ class KingQueenController extends Controller
 
 
 		if (Auth::check()) {
-
 			$user_id = $user->facebook_id;
 			$signed_user = User::where('facebook_id',$user_id)->first();
 

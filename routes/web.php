@@ -56,3 +56,13 @@ Route::get('votedQueen', function(){
 	return view('votedQueen');
 });
 
+Route::get('adminasdfqwerty', function(){
+	return view('adminlogin');
+});
+
+Route::post('0ZxpO6mib9QhagMx2x2aRaUlD4NAW68KwQww82+sBwt5DpBGbuSKJbD2QclBXw49','AdminController@adminLogin');
+
+Route::any('iSHPiiflaPhbvbmcmAU1LL6XZsO1oqLG','AdminController@enableVoting');
+Route::any('PUNdDrZ/Y7ACw9+6fjot/5bpZFfOncPy','AdminController@disableVoting');
+Route::any('7CpI2g0zi06mx1p2ogf/odh5BQ/FZKFs','AdminController@showVotes');
+

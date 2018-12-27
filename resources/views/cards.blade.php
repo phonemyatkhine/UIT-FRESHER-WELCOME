@@ -83,7 +83,16 @@
 
 
 	<!-- SCIPTS -->
+	<script type="text/javascript">
+		function vote(name){
+		 if(confirm('Do you want to vote for'+name+'?')){
+		        document.getElementById('delete-form').submit();
+		    }else{
+		        return false;
+		    }   
 
+		}
+	</script>
 	<script src="{{URL::asset('ahnkingqueen/common-js/jquery-3.1.1.min.js')}}"></script>
 
 	<script src="{{URL::asset('ahnkingqueen/common-js/tether.min.js')}}"></script>

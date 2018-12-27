@@ -15,7 +15,7 @@
                 <div class="col-lg-12 col-md-12">
                     <div class="card h-100">
                         <div class="single-post post-style-2">
-
+                            <a href="{{url('/KingsQueens')}}">
                             <div class="blog-image"><img src="images/kingqueen.jpg" alt="Blog Image"></div>
 
                             <div class="blog-info">
@@ -24,14 +24,15 @@
                                 <h2 class="title"><b>Vote for King And Queen</b></h2>
 
                                 <p>We give you our handsome King Selections and beautiful Queen Selections. Choose your favourite one and vote for him/her.</p>
+                                <span style="color: red">NOTE : You can only vote for one. There is no editing your vote once it is done.</span>
 
                                 <br><br><br>
 
                                 <ul class="post-footer">
-                                    <li><a href="{{url('/KingsQueens')}}"><i class="ion-eye"></i><b>View</b></a></li>
+                                    <li><i class="ion-eye"></i><b>View</b></li>
                                     
                                 </ul>
-
+                            </a>
                             </div><!-- blog-right -->
 
                         </div><!-- single-post extra-blog -->
