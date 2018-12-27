@@ -35,7 +35,7 @@
             <div class="menu-nav-icon" data-nav-menu="#main-menu"><i class="ion-navicon"></i></div>
 
             <ul class="main-menu visible-on-click" id="main-menu">
-                <li><a href="{{url('Kings&Queens')}}">Vote For Kings & Queens</a></li>
+                <li><a href="{{url('KingsQueens')}}">Vote For Kings & Queens</a></li>
                 <li><a href="{{url('food')}}">Food Courts</a></li>
                 <li><a href="{{url('unimap')}}">Campus Map</a></li>
                 <li><a href="{{url('FWagenda')}}">Agenda</a></li>
