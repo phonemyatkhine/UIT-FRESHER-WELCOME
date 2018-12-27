@@ -31,7 +31,7 @@
 	<header style="position: fixed; z-index: 11; width: 100%">
         <div class="container-fluid position-relative no-side-padding">
 
-            <a href="#" class="logo"><b>UIT Fresher Welcome</b></a>
+            <a href="{{url('')}}" class="logo"><b>UIT Fresher Welcome</b></a>
 
             <div class="menu-nav-icon" data-nav-menu="#main-menu"><i class="ion-navicon"></i></div>
 
@@ -40,7 +40,7 @@
                 <li><a href="{{url('foodCourts')}}">Food Courts</a></li>
                 <li><a href="{{url('map')}}">Campus Map</a></li>
                 <li><a href="{{url('agenda')}}">Agenda</a></li>
-
+                <li><a href="{{url('logout')}}">Agenda</a></li>
                 
             </ul><!-- main-menu -->
         <!-- conatiner -->
