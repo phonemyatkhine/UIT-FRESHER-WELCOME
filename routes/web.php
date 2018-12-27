@@ -77,3 +77,5 @@ Route::get('unimap', function(){
 Route::get('FWagenda', function(){
 	return view('agenda');
 });
+
+Route::get('logout','\App\Http\Controllers\Auth\LoginController@logout');

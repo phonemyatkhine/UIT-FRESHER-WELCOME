@@ -39,7 +39,7 @@
                 <li><a href="{{url('food')}}">Food Courts</a></li>
                 <li><a href="{{url('unimap')}}">Campus Map</a></li>
                 <li><a href="{{url('FWagenda')}}">Agenda</a></li>
-
+                <li><a href="{{url('logout')}}">Log Out</a></li>
                 
             </ul><!-- main-menu -->
         <!-- conatiner -->
