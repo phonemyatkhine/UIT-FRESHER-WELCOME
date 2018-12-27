@@ -246,7 +246,7 @@
 										<h2 class="title"><b>Kat Kyee Kite</b></h2>
 										<br>
 										<h5><i class="fas fa-user-circle" style="padding-right:10px;"></i>
-											<b>Unknown</b></a></h5>
+											<b>Nan Lao Ywet</b></a></h5>
 											<br>
 										
 											<h5><i class="fas fa-coins"style="padding-right:10px;"></i>
@@ -270,7 +270,7 @@
 										<h2 class="title"><b>Purple Sticky Rice</b></h2>
 										<br>
 										<h5><i class="fas fa-user-circle" style="padding-right:10px;"></i>
-											<b>Unknown</b></a></h5>
+											<b>Han Min Myat</b></a></h5>
 											<br>
 										
 											<h5><i class="fas fa-coins"style="padding-right:10px;"></i>
