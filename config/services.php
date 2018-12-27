@@ -43,6 +43,6 @@ return [
     'facebook' => [
         'client_id' => '569159866841473',
         'client_secret' => '8a889d3bec8414820df167bd82046aab',
-        'redirect' => 'https://www.uitfresherwelcome.tk/callback/facebook/callback',
+        'redirect' => 'https://www.uitfresherwelcome.tk/auth/facebook/callback',
     ],
 ];
