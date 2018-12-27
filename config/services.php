@@ -43,6 +43,6 @@ return [
     'facebook' => [
         'client_id' => '569159866841473',
         'client_secret' => '8a889d3bec8414820df167bd82046aab',
-        'redirect' => 'http://localhost:8000/auth/facebook/callback',
+        'redirect' => 'http://phplaravel-229544-701914.cloudwaysapps.com/auth/facebook/callback',
     ],
 ];
