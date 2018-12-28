@@ -42,7 +42,8 @@ class FacebookController extends Controller
 
             if(!empty($checkUser)) {
 
-                Auth::loginUsingId($user->getId());
+                Auth::loginUsingId($checkUser->id);
+
                 return redirect('noti');
 
             } else {

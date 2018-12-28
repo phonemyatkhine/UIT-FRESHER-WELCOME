@@ -22,9 +22,9 @@ class LoginController extends Controller
     |
     */
 
-    public function logout() {
-        Session::flush(); 
-        return redirect('facebook');
+    public function logout(Request $request) {
+       Auth::logout();
+        return redirect()->back();
     }
     use AuthenticatesUsers;
 
